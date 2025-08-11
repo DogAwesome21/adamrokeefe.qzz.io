@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>WIP — Check Back Soon</title>
+    <style>
+      :root{
+        --bg1: #07142b; /* dark navy */
+        --bg2: #121826; /* dark gray-blue */
+        --text: #dbe7f5; /* soft light */
+      }
+
+      html,body{
+        height:100%;
+        margin:0;
+      }
+
+      body{
+        display:grid;
+        place-items:center;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        background: linear-gradient(135deg, var(--bg1) 0%, var(--bg2) 100%);
+        color:var(--text);
+      }
+
+      .card{
+        text-align:center;
+        padding:2.25rem 3rem;
+        border-radius:12px;
+        background:rgba(255,255,255,0.03);
+        box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+        backdrop-filter: blur(6px);
+      }
+
+      h1{
+        margin:0 0 0.5rem 0;
+        font-size:1.5rem;
+        letter-spacing:0.6px;
+      }
+
+      p{
+        margin:0;
+        opacity:0.85;
+      }
+
+      @media (max-width:420px){
+        .card{ padding:1.25rem 1.5rem; }
+        h1{ font-size:1.125rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card" role="main">
+      <h1>This page is a WIP</h1>
+      <p>Check back for updates.</p>
+    </div>
+  </body>
+</html>
